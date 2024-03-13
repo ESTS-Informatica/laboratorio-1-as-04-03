@@ -7,6 +7,7 @@ public class WordGenerator {
     private static Random random = new Random();
     public WordGenerator(){
         words = new ArrayList<>();
+        fillArrayList();
     }
     private void fillArrayList(){
         words = new ArrayList<String>(Arrays.asList("boolean", "break", "byte", "case", "char", "class", "continue", "do", "double", "else",
