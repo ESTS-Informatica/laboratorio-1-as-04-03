@@ -44,10 +44,19 @@ public class WordGuessingGame {
     private void showResult(){
         System.out.println("O número de tentativas foi: " + getNumberOfTries());
     }
+    public void setNumberOfTries(int numberOfTries){
+        this.numberOfTries = numberOfTries;
+    }
+
+    public void setHiddenWord(String hiddenWord) {
+        this.hiddenWord = hiddenWord;
+    }
+
+    public WordGenerator getWordGenerator() {
+        return wordGenerator;
+    }
+
     public void play(){
-        numberOfTries = 0;
-        hiddenWord = wordGenerator.generateWord();
-        initializeGuessedWord();
         showWelcome();
         while (!getGuessedWord().equals(getHiddenWord())){
             numberOfTries++;
@@ -65,4 +74,5 @@ public class WordGuessingGame {
         }
         guessedWord = builder.toString();
     }
+
 }
