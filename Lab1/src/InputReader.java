@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class InputReader {
     /**
      * InputReader implementa a entrada de dados através do teclado.
@@ -24,4 +25,3 @@ public class InputReader {
             return answer;
         }
     }
-}
